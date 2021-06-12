@@ -79,3 +79,15 @@ class GuardSheetSerializer(serializers.ModelSerializer):
     class Meta:
         model = GuardSheet
         fields = ('id', 'date', 'guard_id', 'personal_id')
+
+
+class NotWorkingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NotWorkingDays
+        fields = ('id', 'name', 'date')
+
+
+class LicencesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Licences
+        fields = ('id', 'name')

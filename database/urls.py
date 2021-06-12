@@ -12,4 +12,8 @@ urlpatterns = [
     url(r'^personal/([0-9]+)$', views.personal),
     url(r'^guard_sheets/$', views.guard_sheet),
     url(r'^guard_sheets/([0-9]+)$', views.guard_sheet),
+    url(r'^notworking/$', views.not_working),
+    url(r'^notworking/([0-9]+)$', views.not_working),
+    url(r'^licences/$', views.licences),
+    url(r'^licences/([0-9]+)$', views.licences),
 ]
